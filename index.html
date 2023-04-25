@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curriculo</title>
     <link rel="stylesheet" href="css/reset.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js"></script>
 </head>
+
 <body>
     <header>
         <nav>
@@ -19,30 +23,184 @@
             </ul>
         </nav>
     </header>
-    
+
     <main>
         <section class="sobre-mim">
             <div class="pefil-sobre-mim">
-                <img src="img/foto-perfil.jpeg" alt="foto de perfil" id="foto-perfil">
-                <ul>
-                    <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" /></li>
+                <img src="img/foto-perfil.jpeg" alt="foto de perfil" id="foto-perfil" class="rellax"
+                    data-rellax-speed="-2">
+                <div class="ico-liguagens">
+                    <ul class="rellax" data-rellax-speed="-2">
+                        <li title="HTML"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" />
+                        </li>
 
-                    <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg"/></li>
+                        <li title="CSS"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" />
+                        </li>
 
-                    <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" /></li>
+                        <li title="JavaScript"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+                        </li>
 
-                    <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-plain-wordmark.svg" /></li>
-                </ul>
+                        <li title="PostgreSQL"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-plain-wordmark.svg" />
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <h1>Allan souza Cordeiro</h1>
+            <h1 class="rellax" data-rellax-speed="0">Allan souza Cordeiro</h1>
             <div class="texto-sobre-mim">
-                <p>Olá boa tarde! eu sou Allan Souza Cordeiro, tenho 19 anos, estudo programação há um ano e tenho conhecimentos sólidos em HTML, CSS, JavaScript e PostgreSQL. Atualmente, estou me especializando em front-end e tenho paixão por desenvolver interfaces incríveis e interativas. Meu sonho é me tornar um programador de sucesso e trabalhar em projetos inovadores que possam ajudar as pessoas a resolver problemas em suas vidas. Além disso, adoro jogar jogos eletrônicos, programar  e estudar no meu tempo livre, pois acredito que a educação é a chave para o sucesso. Fique à vontade para entrar em contato comigo se tiver alguma pergunta ou quiser saber mais sobre mim. Obrigado!</p>
+                <p class="rellax" data-rellax-speed="0">Olá boa tarde! eu sou Allan Souza Cordeiro, tenho 19 anos,
+                    estudo programação há um ano e tenho conhecimentos sólidos em HTML, CSS, JavaScript e PostgreSQL.
+                    Atualmente, estou me especializando em front-end e tenho paixão por desenvolver interfaces incríveis
+                    e interativas. Meu sonho é me tornar um programador de sucesso e trabalhar em projetos inovadores
+                    que possam ajudar as pessoas a resolver problemas em suas vidas. Além disso, adoro jogar jogos
+                    eletrônicos, programar e estudar no meu tempo livre, pois acredito que a educação é a chave para o
+                    sucesso. Fique à vontade para entrar em contato comigo se tiver alguma pergunta ou quiser saber mais
+                    sobre mim. Obrigado!</p>
             </div>
         </section>
+
+        <section class="progresso-github">
+            <h2 class="rellax">Meu progresso:</h2>
+            <div class="container">
+                <a href="https://github.com/allazaoallado" target="_blank" class="rellax"><img
+                        src="https://github-readme-stats.vercel.app/api?username=AllazaoAllado&theme=graywhite&count_private=true"
+                        alt="" id="github-stats"></a>
+                <a href="https://github.com/allazaoallado?tab=repositories" target="_blank" class="rellax"><img
+                        src="https://github-readme-stats.vercel.app/api/top-langs/?username=AllazaoAllado&layout=compact&theme=graywhite"
+                        alt=""></a>
+            </div>
+        </section>
+
+        <section class="projetos">
+            <h2>Meus Projetos:</h2>
+
+            <div class="container">
+                <div class="row">
+                    <ul>
+                        <li>
+                            <div class="col-sm">
+                                <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#modal1">
+                                    Decodificador de Texto
+                                </button>
+
+                                <div class="modal fade" id="modal1" tabindex="-1" role="dialog"
+                                    aria-labelledby="modal1Label" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="modal1Label">Decodificador de Texto</h5>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Fechar">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                Conheça o projeto Gatune😺, um decodificador de texto que transforma
+                                                palavras em miados e
+                                                miados em palavras. Desenvolvido a partir do Desafio Sprint 01:
+                                                "Construa um decodificador
+                                                de texto com Javascript" da <a href="https://www.alura.com.br/">Alura</a>, esse projeto é uma
+                                                maneira divertida e
+                                                inusitada de codificar e decodificar mensagens. Com Gatune, é possível
+                                                transformar qualquer
+                                                texto em um diálogo entre humanos e gatos, tornando a comunicação mais
+                                                descontraída e
+                                                divertida.
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-dismiss="modal">Fechar</button>
+                                                <a href="https://gatune.netlify.app/" class="btn btn-dark">Abrir Projeto</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="col-sm">
+                                <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#modal2">
+                                    Calculadora de Média
+                                </button>
+
+                                <div class="modal fade" id="modal2" tabindex="-1" role="dialog"
+                                    aria-labelledby="modal2Label" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="modal2Label">Calculadora de Média</h5>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Fechar">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                Este projeto é uma calculadora de média escolar, desenvolvida para facilitar o cálculo das notas dos alunos. Com ela, é possível inserir as notas das avaliações e atividades, além de definir os pesos de cada uma, e obter a média final. É uma ferramenta simples e prática, que pode ajudar tanto os alunos quanto os professores a acompanharem o desempenho escolar de forma mais eficiente.
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-dismiss="modal">Fechar</button>
+                                                    <a href="https://calculadora-de-media-allan.netlify.app/?#" class="btn btn-dark">Abrir Projeto</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="col-sm">
+                                <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#modal3">
+                                    Calculadora de Desconto
+                                </button>
+
+                                <div class="modal fade" id="modal3" tabindex="-1" role="dialog"
+                                    aria-labelledby="modal3Label" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="modal3Label">Calculadora de Desconto</h5>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Fechar">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                O projeto de calculadora de desconto é uma ferramenta que ajuda a calcular tanto o desconto que deve ser aplicado como o desconto que já foi aplicado em um determinado valor. Com essa calculadora, é possível saber o valor final de uma compra após o desconto ser aplicado, ou até mesmo descobrir qual o valor de desconto necessário para atingir um determinado valor final desejado. O projeto é muito útil para quem trabalha com vendas ou para aqueles que desejam fazer compras inteligentes e aproveitar as promoções da melhor forma possível.
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-dismiss="modal">Fechar</button>
+                                                    <a href="https://calculadora-de-desconto-allan.netlify.app" class="btn btn-dark">Abrir Projeto</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+
+
+        </section>
+
     </main>
 
     <footer>
 
     </footer>
+    <script src="js/vanilla.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        var rellax = new Rellax('.rellax');
+    </script>
 </body>
+
 </html>
