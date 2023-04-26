@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Inter:wght@400;700&family=Roboto&display=swap');
 
-/*
+/* FONTES DO PROJETO
 font-family: 'Fira Code', monospace;
 font-family: 'Inter', sans-serif;
 font-family: 'Roboto', sans-serif;
@@ -24,8 +24,6 @@ header {
     position: fixed;
     box-shadow: -3px -3px 4px 10px #00000080;
     z-index: 999;
-
-
 }
 
 nav {
@@ -33,10 +31,7 @@ nav {
     margin-bottom: 2%;
     font-size: 22px;
     font-family: 'Inter', sans-serif;
-
 }
-
-
 
 .ul-navigation li {
     display: inline-block;
@@ -61,10 +56,7 @@ nav {
     background-repeat: no-repeat;
     background-size: 0% 100%;
     background-position-x: right;
-
     transition: background-size 300ms;
-
-
 }
 
 .ul-navigation a:hover {
@@ -81,22 +73,29 @@ main {
     border: 2px solid #736965;
     background-color: #f4eeea;
     margin: auto;
-    padding-left: 20px;
+    padding: 20px;
 }
 
 .sobre-mim {
     margin-top: 100px;
     width: 90%;
     text-align: left;
-
 }
 
 #foto-perfil {
-
     border-radius: 50%;
     margin-right: 60px;
     border: 2px solid #736965;
     margin-bottom: 10px;
+}
+
+.pefil-sobre-mim {
+    float: left;
+    padding-left: 40px;
+}
+
+.pefil-sobre-mim ul {
+    display: inline-block;
 }
 
 .pefil-sobre-mim li {
@@ -110,84 +109,103 @@ main {
     cursor: pointer;
 }
 
-
 .sobre-mim h1 {
+    margin: 20px 0 0 0;
     font-size: 50px;
-    margin-bottom: 60px;
-
     text-transform: uppercase;
-
     text-align: right;
+}
 
+.texto-sobre-mim {
+    padding-left: 40px;
 }
 
 .texto-sobre-mim p {
     width: 80%;
     max-width: 800px;
-
+    clear: both;
 }
 
-.progresso-github h2 {
-    font-size: 40px;
-    margin: 60px 0;
-    align-items: center;
+.progresso-github .container {
+    text-align: center;
 }
 
-
-
-
-
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-
-
+.progresso-github img {
+    height: 39vh;
+    margin: 10px;
 }
 
-.container img {
-
-    height: 230px;
-    width: 600px;
-    transition: 0.5s ease-in-out;
-    object-fit: cover;
-    object-position: center;
-    border: none;
+.progresso-github img:hover {
+    transform: scale(1.1);
 }
 
-.container img:hover{
-transform: scale(1.05);
-
-
-}
-
-.projetos{
+.projetos {
     margin-top: 60px;
 }
 
-.projetos ul{
+.projetos ul {
     margin-top: 60px;
     text-align: left;
     align-items: left;
 }
-.projetos li{
-display: inline-block;
-margin-right: 5px;
+
+.projetos li {
+    display: inline-block;
+    margin-right: 5px;
 }
 
 
-
-
-
-
-
-
+/* CSS para dispositivos móveis */
 
 @media only screen and (max-width: 560px) {
 
+    header{
+        display: none;
+    }
+
+    .pefil-sobre-mim {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 0 auto;
+
+
+
+    }
+
+    #foto-perfil {
+        border-radius: 50%;
+        margin-right: 0;
+        border: 2px solid #736965;
+        margin-bottom: 20px;
+        
+
+    }
+
+    .sobre-mim h1 {
+        margin: 20px 0 20px 0;
+        font-size: 50px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .texto-sobre-mim {
+        padding-left: 10%;
+    }
+
+    .texto-sobre-mim p {
+        width: 100%;
+        max-width: 100%;
+        clear: both;
+    }
+
     main {
         width: 100%;
+        padding: 0;
+        text-align: center;
+        border-left: 0;
+        border-right: 0;
     }
 
     nav {
@@ -199,12 +217,9 @@ margin-right: 5px;
     }
 
     .ul-navigation li {
-
         padding-left: 25x;
         padding-right: 25px;
         padding-bottom: 5px;
-
-
     }
 
     .ul-navigation li:first-child {
@@ -215,5 +230,37 @@ margin-right: 5px;
         padding-left: 0;
 
     }
-}
 
+    .progresso-github img {
+        height: 25vh;
+        width: 50vh;
+        margin-top: -1000px;
+        margin: 0;
+        position: relative;
+    }
+
+    .progresso-github img:hover{
+        transform: scale(1.01);
+    }
+
+    .projetos {
+        margin-top: 60px;
+    }
+    
+    .projetos ul {
+        margin-top: 60px;
+        text-align: center;
+        align-items: left;
+    }
+    
+    .projetos li {
+        display: inline-block;
+        margin-right: 0;
+        padding-bottom: 10px;
+    }
+
+    button{
+        width: 210px;
+        height: 50px;
+    }
+}
